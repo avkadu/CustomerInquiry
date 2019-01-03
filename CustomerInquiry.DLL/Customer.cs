@@ -23,7 +23,7 @@ namespace CustomerInquiry.DLL
         public int CustomerID { get; set; }
         public string CustomerName { get; set; }
         public string ContactEmail { get; set; }
-        public Nullable<int> MobileNo { get; set; }
+        public string MobileNo { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Transaction> Transactions { get; set; }

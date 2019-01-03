@@ -18,5 +18,8 @@ namespace CustomerInquiry.ErrorHandlers
 
         [Description("Invalid Email")]
         InvalidEmail = 1003,
-        }
+
+        [Description("Not Found")]
+        NotFound = 1004,
+    }
 }

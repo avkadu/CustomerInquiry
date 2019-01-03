@@ -13,8 +13,18 @@ namespace CustomerInquiry.BLL
         private CustomerInquiryEntities db = new CustomerInquiryEntities();
         public Customer GetCustomerData(int CustomerId, string Email)
         {
-            var Customer = db.Customers.Find(CustomerId);
-            return Customer;
+            var customer = new Customer();
+            try
+            {
+                customer = db.Customers.Where(x => x.CustomerID == CustomerId & x.ContactEmail == Email).FirstOrDefault();
+                customer.Transactions = customer.Transactions.OrderBy(x => x.TransactionDateTime).Take(5).ToList();
+            }
+            catch (Exception e)
+            {
+                customer = null;
+            }
+            
+            return customer;
         }
     }
 }

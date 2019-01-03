@@ -5,9 +5,9 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="925638f4376345788fab66c6649a8e6a" Name="Diagram1">
-        <EntityTypeShape EntityType="CustomerInquiryModel.Customer" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="CustomerInquiryModel.Transaction" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
-        <AssociationConnector Association="CustomerInquiryModel.FK_CustomerID" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="CustomerInquiryModel.Customer" Width="1.5" PointX="0.75" PointY="1.125" />
+        <EntityTypeShape EntityType="CustomerInquiryModel.Transaction" Width="1.5" PointX="3" PointY="1" />
+        <AssociationConnector Association="CustomerInquiryModel.FK_CustomerID" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

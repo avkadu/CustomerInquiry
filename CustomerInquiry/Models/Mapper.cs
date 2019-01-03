@@ -18,8 +18,8 @@ namespace CustomerInquiry.Models
                     var transaction = new Transaction
                     {
                         TransactionID = result.TransactionID,
-                        TransactionDateTime = result.TransactionDateTime,
-                        Amount = result.Amount,
+                        TransactionDateTime = result.TransactionDateTime.Value.ToString("dd'/'MM'/'yyyy HH: mm:ss"),
+                        Amount = result.Amount.Value.ToString("0.##"),
                         CurrencyCode = result.CurrencyCode,
                         Status = result.Status
                     };

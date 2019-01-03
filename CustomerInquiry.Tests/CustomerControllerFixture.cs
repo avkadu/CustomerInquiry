@@ -46,7 +46,7 @@ namespace CustomerInquiry.Tests
                 CustomerID = 1,
                 CustomerName = "Dip",
                 ContactEmail = "avp@gmail.com",
-                MobileNo = Convert.ToInt32(8149911140),
+                MobileNo = "8149911140",
                 Transactions = {}
             });
             var result = controller.GetCustomer(customerId,email);
