@@ -11,7 +11,7 @@ CREATE TABLE [dbo].[Customer](
 CREATE TABLE [dbo].[Transaction](
 	[TransactionID] [int]  NOT NULL Identity PRIMARY KEY,
 	[TransactionDateTime] DateTime NULL,
-	[Amount] decimal NULL,
+	[Amount] decimal (18,2) NULL,
 	[CurrencyCode] [varchar] (3) null,
 	[Status] varchar(10) null,
 	[CustomerID] [int]  
