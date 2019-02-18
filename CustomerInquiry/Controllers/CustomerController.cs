@@ -16,7 +16,7 @@ namespace CustomerInquiry.Controllers
     public class CustomerController : ApiController
     {
         public  ICustomerManager _customerManager;
-
+        //GetCustomer
         [HttpGet]
         public IHttpActionResult GetCustomer(int customerId =0,string email =null)
         {
